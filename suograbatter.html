@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KreaKiosken</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Sørg for at stien til CSS-filen er korrekt -->
+    <script>
+        // JavaScript funktion til at vise en besked, når man indsender formularen
+        function handleNewsletterSubmit(event) {
+            event.preventDefault(); // Forhindrer formularen i at genindlæse siden
+            alert("Tak for din tilmelding! Du vil modtage de nyeste opdateringer om rabatter.");
+        }
+    </script>
+</head>
+<body>
+    <header> <!-- samme header som på resten af siderne -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">OPSKRIFTER</a>
+                    <ul class="dropdown">
+                        <li><a href="strik.html">Strik</a></li>
+                        <li><a href="#">Hækle</a></li>
+                        <li><a href="#">Brodering</a></li>
+                        <li><a href="#">Keramik</a></li>
+                        <li><a href="#">Syning</a></li>
+                        <li><a href="#">Skrapbog</a></li>
+                        <li><a href="#">Smykker</a></li>
+                        <li><a href="#">Tegn & Mal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Materialer</a></li>
+                        <li><a href="#">Redskaber</a></li>
+                    </ul>
+                </li>
+                <!-- Link til forsiden via logoet i headeren -->
+                <li><a href="desktop.html"><img src="images/Rigtiglogo.png" alt="logo-kreakiosken" class="logo"></a></li>
+                
+                <li>
+                <a href="#">INSPIRATION</a>
+                <ul class="dropdown">
+                    <li><a href="galleri.html">Galleri</a></li>
+                    <li><a href="#">Din nye hobby - quiz</a></li>
+                    <li><a href="mindfullnes.html">Mindfulness</a></li>
+                    <li><a href="suograbatter.html">SU og Rabatter</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="#">OM OS</a>
+                <ul class="dropdown">
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Formål</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- Her starter min artikel om SU og Rabatter -->
+    <main class="rabatter-page">
+        <section class="rabatter-content">
+            <div class="text-and-image">
+                <div class="text-container">
+                    <h3>Studieliv på budget:</h3>
+                    <h4>Su og Rabatter</h4>
+
+                    <p>Er du studerende med en kreativ hobby? Så er der gode nyheder! Mange hobbybutikker tilbyder rabatter, der gør det lettere at få SU-budgettet til at række længere. Her får du tips til, hvordan du finder og bruger rabatter, og idéer til billige hobbyprojekter.</p>
+
+                    <h4>Loyalitetsprogrammer og rabatter for studerende</h4>
+                    <p>Flere hobbybutikker som Panduro og Rito tilbyder studierabatter og loyalitetsprogrammer. Med disse programmer kan du få point, rabatter og særlige tilbud som studerende. Husk at tjekke, om din lokale butik har et lignende program.</p>
+
+                    <h4>Sådan finder du rabatter i hobbybutikker</h4>
+                    <p>• Følg butikkerne på sociale medier for tilbud.<br>
+                       • Tilmeld dig nyhedsbreve for eksklusive rabatter.<br>
+                       • Brug rabatkoder, når du handler online.<br>
+                       • Hold øje med sæsonudsalg for gode tilbud.
+                    </p>
+
+                    <h4>Populære hobbybutikker med studierabatter</h4>
+                    <p>• <a href="https://panduro.com/da-dk/maerker/panduro-hobby" target="_blank">Panduro</a>: Studierabat og loyalitetsprogram.<br>
+                        • <a href="https://hobbii.dk/garn?msclkid=95aaff4bbb99130716ac984579c46181&utm_source=bing&utm_medium=cpc&utm_campaign=DK%20%7C%20Search%20%7C%20Generisk&utm_term=hobbii&utm_content=G%20%7C%20Alle%20Sider%20%7C%20DSA" target="_blank">Hobbii</a>: 10% rabat med studiekort.<br>
+                        • <a href="https://rito.dk/" target="_blank">Rito</a>: Tilbud via nyhedsbrev.<br>
+                        • <a href="https://yarnjunkies.dk/pages/om-os" target="_blank">Yarnjunkies</a>: Ekstra rabatter til medlemmer.
+                     </p>
+                     
+                    <h4>Sammenlign rabatter og tilbud</h4>
+                    <p>Det er værd at sammenligne rabatter. Nogle butikker har faste studierabatter, mens andre kører særlige kampagner som "køb 2, få 1 gratis". Vælg den butik, der passer bedst til dig.</p>
+
+                    <h4>Budgetvenlige hobbyidéer</h4>
+                    <p>• Strikning/Hækling: Garn er overkommeligt med rabatter.<br>
+                       • DIY-smykker: Lav smykker med billige materialer.<br>
+                       • Scrapbooking: Brug personlige scrapbøger og billigt papir til dine projekter.
+                    </p>
+
+                    <p>Med de rette rabatter og overblik kan du få dit SU-budget til at række længere og få mere tid til at dyrke dine hobbyer!</p>
+
+                    <!-- Nyhedsbrevstilmeldingsformular -->
+                    <div class="nyhedsbrev">
+                        <h5>Tilmeld dig vores nyhedsbrev her, og få de nyeste opdateringer om rabatter:</h5>
+                        <form onsubmit="handleNewsletterSubmit(event)">
+                            <input type="email" name="email" placeholder="Indtast din e-mail" required>
+                            <button type="submit">Tilmeld</button>
+                        </form>
+                    </div>
+                    <h3>-KreaKiosken</h3>
+                </div>
+                <div class="succes-besked">
+                    Tak for din tilmelding! Du vil nu modtage opdateringer om vores nyeste rabatter.
+                </div>
+                
+                <div class="image-container">
+                    <img src="images/cykelkurv.png" alt="cykelkurv" class="cykelkurv">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- samme footer som på resten af siderne -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://dk.pinterest.com/"><img src="images/pinterest.png" alt="Pinterest"></a>
+        </div>
+        <p>KreaKiosken</p>
+        <!-- Link til forsiden via mini-logoet i footeren -->
+        <a href="desktop.html"><img src="images/Rigtiglogo.png" alt="logo-kreakiosken" class="logo-kreakiosken"></a>
+    </footer>
+</body>
+</html>

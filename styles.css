@@ -1,0 +1,519 @@
+/* opsætning af box-modellen */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Opsætning for alt html og bodyelementerne */
+html, body {
+    height: 100%;
+    background-color: #FFEED3; /* Samme baggrundsfarve for hele siden */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Wide Latin"; 
+    color: #740C10;
+    min-height: 100%;
+}
+
+/* Header og navigation for siderne */
+header {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrerer navigationen */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centrerer listeelementer */
+    align-items: center;
+    flex-grow: 1; /* Gør sådan at menuen spreder sig */
+}
+
+nav ul li {
+    position: relative;
+    flex: 1;
+    text-align: center; /* Centrerer alt den tekst der er i listeelementer */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #740C10;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+/* Dropdown-menu styling */
+nav ul li .dropdown {
+    font-family: 'Myriad Pro';
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    left: 0;
+    min-width: 150px;
+    border: 1px solid #740C10;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Vis dropdown-menu ved hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Styling af dropdown-menuens links */
+nav ul li .dropdown li {
+    text-align: left;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px 20px;
+    color: #740C10;
+    font-family: 'Myriad Pro', Arial, sans-serif;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #740C10;
+    color: #FFFFFF;
+}
+
+/* Styling af logo i header */
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+}
+
+/* Main: styling */
+main {
+    flex-grow: 1;
+    padding-top: 0px;
+}
+
+/* opsætning er billederne */
+.forside-brodering img {
+    width: 96%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.billeder {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.billede {
+    width: 30%;
+}
+
+.billede img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #FFFFFF;
+    padding: 20px;
+    position: relative;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-icons a img {
+    width: 40px;
+}
+
+footer p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #740C10;
+    margin-top: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+footer .logo-kreakiosken {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    width: 60px;
+    height: auto;
+}
+
+/* Strik-side opsætning */
+.strik-page {
+    padding: 20px 0;
+}
+
+.strik-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.sweater-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 35%;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sweater-item a:hover {
+    background-color: #FFEED3;
+    border: 1px solid #740C10;
+}
+
+.sweater-item img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sweater-item .text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #740C10;
+    margin: 10px 0 5px;
+}
+
+.sweater-item .text p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #740C10;
+}
+
+/* styling af striksider */
+.sweater-page {
+    padding: 20px;
+}
+
+.sweater-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-container {
+    width: 60%;
+    color: #740C10;
+    font-family: "Wide Latin", serif;
+}
+
+.text-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-container h3, .text-container h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container h5 {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.image-container {
+    width: 35%;
+}
+
+.sweater-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallerisiden styling */
+.gallery-page {
+    padding: 20px;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mindfulness-side styling og opsætning */
+.mindfulness-page {
+    padding: 20px;
+}
+
+.mindfulness-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-container {
+    width: 55%;
+    color: #740C10;
+    font-family: "Wide Latin", serif;
+}
+
+/* for at h3erne i de forskellige classes agerer ens */
+.text-container h3, 
+.full-width-text h3 {
+    font-size: 26px; 
+    font-weight: bold;
+    margin-bottom: 5px; /* plads under h3 */
+}
+
+/* for at h4erne i de forskellige classes agerer ens */
+.text-container h4, 
+.full-width-text h4 {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px; 
+}
+
+/* For ekstra afstand mellem den første h3 + h4 og resten af teksten */
+.text-container h3:first-of-type + h4 {
+    margin-bottom: 40px; 
+}
+
+.text-container p, 
+.text-container h4:not(:first-of-type) {
+    margin-top: 10px; /* Ekstra afstand mellem overskrifterne og resten af teksten */
+}
+
+.text-container p {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 35%;
+}
+
+.mindfulness-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.full-width-text {
+    width: 100%;
+    margin-top: 20px;
+    color: #740C10;
+}
+
+.full-width-text p {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* SU og rabat-side opsætning og styling */
+.rabatter-page {
+    padding: 20px;
+}
+
+.rabatter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-container {
+    width: 55%;
+    color: #740C10;
+    font-family: "Wide Latin", serif;
+}
+
+.text-container p {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 0%;
+}
+
+.image-container {
+    width: 35%;
+}
+
+.cykelkurv {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.full-width-text {
+    width: 100%;
+    margin-top: 20px;
+    color: #740C10;
+}
+
+.full-width-text p {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Linkstyling for at links har samme farve som resten af teksten */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling af nyhedsbrev og svar */
+.nyhedsbrev {
+    margin-top: 30px;
+    background-color: #FFEED3; 
+    padding: 20px;
+    border: 1px solid #740C10; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nyhedsbrev h5 {
+    font-family: 'Myriad Pro', Arial, sans-serif;
+    color: #740C10;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nyhedsbrev input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #740C10;
+    border-radius: 5px;
+    width: 80%; 
+    max-width: 400px; /* Begrænser bredden */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.nyhedsbrev button {
+    background-color: #740C10;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nyhedsbrev button:hover {
+    background-color: #A02025; /* Ændrer farve ved hover */
+}
+
+/* Styling af succesbeskeden */
+.succes-besked {
+    background-color: #FFEED3;
+    border: 1px solid #740C10;
+    color: #740C10;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
