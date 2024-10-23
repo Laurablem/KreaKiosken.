@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Det her er min forside for kreakiosken -->
+<html lang="da"> <!-- søger for at den er sat til dansk -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KreaKiosken</title>
+    <link rel="stylesheet" href="styles.css"> <!--her linker jeg til min CSS -->
+</head>
+<body>
+    <header> <!-- her starter min header, som går igen for alle mine sider -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">OPSKRIFTER</a>
+                    <ul class="dropdown"> <!-- mine dropdown menuer, jeg har kun linket til de sider jeg har programeret -->
+                        <li><a href="strik.html">Strik</a></li>
+                        <li><a href="#">Hækle</a></li>
+                        <li><a href="#">Brodering</a></li>
+                        <li><a href="#">Keramik</a></li> 
+                        <li><a href="#">Syning</a></li> 
+                        <li><a href="#">Skrapbog</a></li>
+                        <li><a href="#">Smykker</a></li>
+                        <li><a href="#">Tegn & Mal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Materialer</a></li> 
+                        <li><a href="#">Redskaber</a></li>
+                    </ul>
+                </li> <!-- mit logo linker tilbage til forsiden, på alle sider -->
+                <li><a href="desktop.html"><img src="images/Rigtiglogo.png" alt="KreaKiosken logo" class="logo"></a></li>
+                
+                <li>
+                    <a href="#">INSPIRATION</a>
+                    <ul class="dropdown">
+                        <li><a href="galleri.html">Galleri</a></li>
+                        <li><a href="#">Din nye hobby - quiz</a></li> 
+                        <li><a href="mindfullnes.html">Mindfulness</a></li>
+                        <li><a href="suograbatter.html">SU og Rabatter</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">OM OS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Formål</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- her er min main del af forsiden med de 4 billeder-->
+        <section class="forside-brodering">
+            <img src="images/forside-brodering.png" alt="Billede af brodering">
+        </section>
+
+        <section class="billeder">
+            <div class="billede">
+                <img src="images/sortstrik.jpg" alt="Billede af sort strik">
+            </div>
+            <div class="billede">
+                <img src="images/stolstrik.jpg" alt="Billede af strikket stol">
+            </div>
+            <div class="billede">
+                <img src="images/efterårsstrik.png" alt="Billede af efterårsstrik">
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- her er min footer, den går igen på alle sider -->
+        <div class="social-icons"> <!-- jeg linker til de faktiske sider som ikonerne tihører -->
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://dk.pinterest.com/"><img src="images/pinterest.png" alt="Pinterest"></a>
+        </div>
+        <p>KreaKiosken</p> <!-- mit logo linker til forsiden -->
+        <a href="desktop.html"><img src="images/Rigtiglogo.png" alt="KreaKiosken mini-logo" class="logo-kreakiosken"></a>
+    </footer>
+</body>
+</html>
